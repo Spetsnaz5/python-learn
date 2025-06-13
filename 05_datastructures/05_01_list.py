@@ -6,6 +6,7 @@ list 有序、可變動的資料結構，可以儲存任意類型的多個項目
 | `fruits[1:3]`               | 切片從索引 1 到 2      |
 | `fruits.append("orange")`   | 加入元素至最後面       |
 | `fruits.insert(1, "grape")` | 在索引 1 插入元素      |
+| `fruits.extend([1, 2])`     | 將 iterable 加入 list 的尾端|
 | `fruits.remove("banana")`   | 刪除特定元素（第一個） |
 | `fruits.pop()`              | 移除並回傳最後一個元素 |
 | `fruits.index("cherry")`    | 傳回對應元素的索引位置 |
