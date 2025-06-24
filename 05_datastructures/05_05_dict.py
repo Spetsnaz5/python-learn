@@ -1,14 +1,22 @@
 """
 dictionary 是一種用來儲存「鍵值對」的資料結構，也稱為 dict。它非常適合用來表示「對應關係」，例如姓名對電話、ID 對物件、設定名稱對值等等。
-| 方法               | 說明                           |
-| ---------------- | ---------------------------- |
-| `.get(key)`      | 安全地取得值                       |
-| `.keys()`        | 回傳所有 key                     |
-| `.values()`      | 回傳所有 value                   |
-| `.items()`       | 回傳 (key, value) 組成的 tuple 列表 |
-| `.pop(key)`      | 刪除並回傳某個鍵的值                   |
-| `.update(dict2)` | 合併另一個字典                      |
-| `.clear()`       | 清空字典                         |
+| 操作                              | 說明                         |
+| --------------------------------- | ---------------------------- |
+| `person["name"]`                  | 取得指定鍵的值               |
+| `person["age"] = 26`              | 設定或更新指定鍵的值         |
+| `person.get("gender", "unknown")` | 安全取得鍵值（若無則回預設） |
+| `person.keys()`                   | 回傳所有鍵                   |
+| `person.values()`                 | 回傳所有值                   |
+| `person.items()`                  | 回傳所有鍵值對               |
+| `"name" in person`                | 測試鍵是否存在               |
+| `person.update({"age": 30})`      | 批次更新鍵值                 |
+| `person.pop("age")`               | 移除指定鍵並回傳其值         |
+| `person.popitem()`                | 移除並回傳最後一對鍵值       |
+| `del person["name"]`              | 刪除指定鍵                   |
+| `person.clear()`                  | 清空所有鍵值                 |
+| `len(person)`                     | 取得鍵值對個數               |
+| `new_dict = person.copy()`        | 複製一份新的 dict            |
+| `dict()`                          | 建立空字典                   |
 """
 
 dict = {
