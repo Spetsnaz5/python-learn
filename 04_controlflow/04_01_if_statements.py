@@ -19,3 +19,8 @@ elif 1 == 1 or 0 == 0:
     pass
 else:
     pass
+
+x, y = 5, 5
+end = (5, 5)
+if (x, y) == end:
+    print((x, y) == end)
