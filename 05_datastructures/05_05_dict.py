@@ -58,3 +58,7 @@ dict(sape=4139, guido=4127, jack=4098) # ➜ {'sape': 4139, 'guido': 4127, 'jack
 
 # dict comprehensions
 print({x: x**2 for x in (2, 4, 6)}) # {2: 4, 4: 16, 6: 36}
+
+# 檢查 dict 是否為空
+if not dict:
+    print(dict)
